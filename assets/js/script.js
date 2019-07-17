@@ -37,7 +37,7 @@ btn.addEventListener('click', () => {
 					// console.log(element.groups);				
 					for (let k = 0; k < element.groups.length; k++) {
 						const currElem = element.groups[k];
-						if(currElem == filter) filteredArray.push(languages[i])						
+						if(currElem == filter && languages[i].logo != undefined) filteredArray.push(languages[i])						
 					}	
 				}
 				console.log(filteredArray);
